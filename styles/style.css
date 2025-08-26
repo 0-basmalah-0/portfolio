@@ -615,6 +615,7 @@ font-size: x-large;
     font-size: 1.8rem;
     text-align: center;
   }
+ 
   nav ul {
     flex-direction: column;
     gap: 0.8rem;
@@ -663,6 +664,11 @@ font-size: x-large;
   .inance, .certi .card {
     width: 95%;
     margin: 2rem auto;
+  }
+  .tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
   }
   #contact form {
     width: 90%;
