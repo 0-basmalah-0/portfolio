@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+:root{
+    --p:#f9037a;
+    --bgcolor: #080808;
+    --second-bgcolor: #131313;
+    --txt:rgb(244, 232, 217);
+    --pin:rgb(224, 132, 192);
+}
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+
+}
+body{
+    
+    background-color:var(--bgcolor);
+    color:var(--txt);
+    font-family: "Funnel Display", sans-serif;
+    
+}
+header .container{
+     background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height:10%;
+     padding: 1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:5;
+}
+h1{
+    text-shadow: 0 0 35px var(--p);
+    font-size: 2.5rem;
+    color: var(--p);
+    font-weight: 800;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    gap: 0.4rem;
+}
+header a{
+    color: antiquewhite;
+}
+header a:hover{
+     color: var(--p);
+
+} 
+main{
+    margin:7rem 1rem;
+}
+ 
+h2{
+    color: var(--p);
+    padding:1rem;
+     text-shadow: 0 0 30px var(--p);
+    font-size: 2rem;
+       text-align: center;
+}
+.hero {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:0.2rem;
+    flex-wrap: wrap;
+    margin:10rem;
+}
+.hcontent{
+    display :flex;
+    flex-direction: column;
+    height:60%;
+    width: 60%;
+}
+.hero h2{
+    padding :0.5rem;
+    margin:1.5rem;
+}
+.hero h2::before{
+ content: "|";
+ animation-name: typing;
+ animation-duration: 4s;
+ animation-iteration-count: infinite;
+ animation-delay: 2s;
+}
+@keyframes typing{
+    0% {
+        content:"Hello!"
+        
+    }
+    25%{
+          content:"Hello! It's"
+    }
+     50%{
+          content:"Hello! It's me,"
+    }
+    75%{
+          content:"Hello! It's me, Basmalah"
+    }
+    100%{
+          content:"Hello! It's me, Basmalah ."
+    }
+}
+.hero span{
+    color: var(--pin);
+    padding:0.5rem;
+}
+
+.hero h3 span::after{
+ content: "|";
+ animation-name: typinggg;
+ animation-duration: 10s;
+ animation-iteration-count: infinite;
+ animation-delay: 2s;
+}
+@keyframes typinggg{
+    0% {
+        content:"Web Develober."
+        
+    }
+   45%{
+          content:"Software Engineer."
+    }
+     75%{
+          content:"Problem Solver."
+    }
+   100%{
+          content:"FCI Student."
+    }
+
+}
+.hero-img{
+    height :15%;
+    width:9%;
+    margin-left: 4rem;
+}
+.hero img{
+height:400px;
+width: 250px;
+border-color: var(--p);
+  border-radius: 120px;
+   box-shadow: 0 0 39px var(--p);
+   padding:19px auto;
+}
+
+[class|="btn"] {
+  padding: 15px 25px;
+  font-weight: bold;
+  color: var(--txt);
+  border-width: 2px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+}
+
+[class|="btn"]:hover {
+  background-color: transparent;
+}
+
+.hero .btn{
+    margin: 3rem;
+    
+}
+.btn-primary {
+  background-color: var(--p);
+  color: var(--second-bgcolor);
+  padding: 15px 25px;
+  font-weight: bold;
+  color: var(--txt);
+  border-width: 2px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  border-radius: 120px;
+  margin: 1rem;
+
+}
+.btn-primary:hover {
+  color: var(--p);
+  border-color: var(--p);
+   box-shadow: 0 0 30px var(--p);
+}
+.btn-secondary {
+    color: var(--p);
+  border-color: var(--p);
+  border-radius: 120px;
+   box-shadow: 0 0 30px var(--p);
+   margin: 1rem;
+}
+
+.btn-secondary:hover {
+ background-color: var(--p);
+  color: var(--second-bgcolor);
+  padding: 15px 25px;
+  font-weight: bold;
+  color: var(--txt);
+  border-width: 2px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+}
+#about h2{
+    text-align: center;
+}
+#about p{
+    width: 60%;
+}
+#about .content{
+ display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding:30px auto;
+}
+#about{
+    padding:1rem;
+    padding-top: 4rem;
+    margin:3rem;
+}
+.card{
+    padding: 3rem;
+  border-color: var(--p);
+    border-width: 3px;
+    border-style: solid;
+  border-radius: 120px;
+  box-shadow: 0 0 30px var(--p);
+;
+}
+.card h3{
+    padding:0.5rem;
+    color:var(--p);
+     text-shadow: 0 0 20px var(--p);
+
+     
+}
+.card strong{
+  color: var(--pin);
+}
+#education{
+    padding:1rem;
+    padding-top: 4rem;
+    margin:9rem;
+}
+#education h2{
+    text-align: center;
+    padding:1rem;
+    margin:3rem;
+}
+#education .card{
+    width: 30rem;
+    height:24rem;
+    padding :4rem;
+   
+}
+.educards ul{
+     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap :2rem;
+}
+
+#education h3{
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+#skills{
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+}
+.tskill{
+    margin:1rem;
+}
+.tskill h3{
+    text-align: center;
+    color:var(--p);
+    margin-bottom:1.5rem;
+}
+.tskill ul{
+     display: flex;
+ flex-direction: column;
+ gap:0.5rem;
+}
+
+.tskill li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.tskill li p {
+  width: 4rem;
+  margin: 0;
+}
+
+.tskill li div {
+  flex: 1;
+  height: 1rem;
+  background:#2b0115d8 ;
+  border-radius: 20px;
+  margin: 0 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.tskill li div div {
+  height: 100%;
+  width: 0;
+  background: var(--p);
+  border-radius: 20px;
+}
+
+.cp div{
+  animation: fillcp 5s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fillcp {
+  from { width: 0; }
+  to { width:95%;}
+}
+.ch div{
+  animation: fillch 5s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fillch {
+  from { width: 0; }
+  to { width:75%;}
+}
+.html div{
+  animation: fillht 5s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fillht {
+  from { width: 0; }
+  to { width:95%;}
+}
+.css div{
+  animation: fillcs 5s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fillcs {
+  from { width: 0; }
+  to { width:90%;}
+}
+.js div{
+  animation: filljs 5s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes filljs {
+  from { width: 0; }
+  to { width:95%;}
+}
+.sskill{
+    margin:7px;
+}
+.sskill h3{
+    text-align: center;
+    color:var(--p);
+    margin-bottom:2rem;
+}
+.sskill ul{
+    padding:1rem;
+    margin-bottom: 15px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap:2rem;
+}
+.sskill li{
+    text-align: center;
+      padding: 20px;
+  border-color: var(--p);
+    border-width: 3px;
+    border-style: solid;
+  border-radius: 30px;
+  box-shadow: 0 0 30px var(--p);
+}
+.sskill p{
+    color: rgb(224, 132, 192);
+    padding-bottom: 0.5rem;
+}
+#skills .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem auto;
+    width: 40%;
+    height: 100%;
+    margin: 0.5rem auto;
+    margin-bottom: 11rem;
+}
+.card i{
+   color :var(--p);
+   font-size: x-large;
+   padding-bottom: 0.5rem;
+}
+#skills .card h3{
+    padding-bottom: 1.5rem;
+}
+#skills .card span{
+  color:rgb(224, 132, 192);
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+}
+#achieve h2{
+  margin:5rem;
+}
+#achieve h3{
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: xx-large;
+  color: var(--p);
+}
+.inance img{
+  width :100%;
+  height:30%;
+}
+
+.inance{
+   padding: 3rem ;
+  border-color: var(--p);
+    border-width: 3px;
+    border-style: solid;
+  border-radius: 120px;
+  box-shadow: 0 0 30px var(--p);
+  width: 60%;
+  margin-bottom: 5rem;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  justify-content: center;
+  align-items: center;
+}
+ .hh{
+  color:var(--pin) ;
+  font-size:x-large;
+  font-weight: bolder;
+}
+.inance .tag {
+ margin-top:2rem;
+}
+.inance .tag span{
+  
+  padding:0.5rem;
+  border-color: var(--pin);
+    border-width: 3px;
+    border-style: solid;
+  border-radius: 120px;
+  box-shadow: 0 0 30px var(--p)
+}
+.certi img{
+   width :65%;
+  height:30%;
+}
+.certi .card{
+  width: 60%;
+  margin-bottom: 5rem;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+#contact form {
+  width: 50%;
+}
+
+#contact form ::placeholder{
+  font-size: 0.9rem;
+  color: rgba(244, 232, 217, 0.707);
+  
+}
+
+#contact form input,
+#contact form textarea {
+  color:var(--txt);
+  background-color: var(--bgcolor);
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 7px var(--p);
+  font-size: 1rem;
+}
+
+#contact form textarea {
+  resize: vertical;
+}
+#contact ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  margin:3rem;
+}
+#contact i{
+  font-size: 3rem;
+  color:var(--pin);
+  text-shadow:0px 0px 5px var(--p);
+  transition: all 0.3 ease;
+} 
+#contact i:hover{
+  transform: scale(1.05) translateY(-5px);
+}
+
+form .btn-secondary{
+  background-color: var(--bgcolor);
+}
+footer p {
+text-align: center;
+color: var(--pin);
+font-weight: bolder;
+font-size: x-large;
+  text-shadow:0.5px 0.5px 20px var(--p);
+}
+
+
+@media (max-width: 1024px) {
+  header .container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0.5rem;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    margin: 5rem 1rem;
+  }
+  .hero-img {
+    margin: 2rem auto 0 auto;
+    width: 40%;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  #about .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #about p {
+    width: 90%;
+  }
+  #education .card {
+    width: 80%;
+    height: auto;
+    padding: 2rem;
+  }
+  #skills .card {
+    width: 80%;
+  }
+  .inance, .certi .card {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #contact form {
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  main{
+    margin-top: 250px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .hero {
+    margin: 3rem 0.5rem;
+    gap: 1.5rem;
+  }
+  .hcontent {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-img {
+    width: 70%;
+    margin: auto;
+  }
+  .hero .btn-primary{
+    margin-right: 100px;
+    margin-top: 100px;
+  }
+  .hero .btn-secondary{
+    margin-left: 150px;
+    margin-bottom: 100px;
+  }
+  #about .card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  #education {
+    margin: 3rem 1rem;
+  }
+  #education .card {
+    width: 100%;
+    padding: 3rem;
+  }
+  .tskill ul, .sskill ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #skills .card {
+    width: 90%;
+  }
+  #skills .card h3{
+    text-align: center;
+  }
+  .inance, .certi .card {
+    width: 95%;
+    margin: 2rem auto;
+  }
+  #contact form {
+    width: 90%;
+  }
+  #contact ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  #contact i {
+    font-size: 2rem;
+  }
+  footer p {
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+}
