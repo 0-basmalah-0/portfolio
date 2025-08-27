@@ -608,17 +608,18 @@ font-size: x-large;
 
 
 @media (max-width: 768px) {
-  main{
-    margin-top: 250px;
-  }
+  /* main{
+    /* margin-top: 250px; */
+  } */
   h1 {
     font-size: 1.8rem;
     text-align: center;
   }
  
   nav ul {
-    flex-direction: column;
-    gap: 0.8rem;
+    /* flex-direction: column;
+    gap: 0.8rem; */
+    display: none;
   }
   .hero {
     margin: 3rem 0.5rem;
@@ -632,14 +633,18 @@ font-size: x-large;
     width: 70%;
     margin: auto;
   }
-  .hero .btn-primary{
+  .btn{
+    display: flex;
+  }
+  /* .hero .btn-primary{
     margin-right: 100px;
     margin-top: 100px;
+    margin-left: -10px;
   }
   .hero .btn-secondary{
     margin-left: 150px;
     margin-bottom: 100px;
-  }
+  } */
   #about .card {
     width: 90%;
     padding: 1.5rem;
@@ -669,6 +674,10 @@ font-size: x-large;
     display: flex;
     flex-wrap: wrap;
     gap:1rem;
+  }
+  #achieve h2{
+    text-align: center;
+    margin-left: 3rem;
   }
   #contact form {
     width: 90%;
