@@ -25,6 +25,7 @@ body{
     font-family: "Funnel Display", sans-serif;
     
 }
+
 header .container{
      background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
@@ -143,6 +144,7 @@ h2{
     }
 
 }
+
 .hero-img{
     height :15%;
     width:9%;
@@ -172,6 +174,7 @@ border-color: var(--p);
 
 .hero .btn{
     margin: 3rem;
+    display:flex;
     
 }
 .btn-primary {
@@ -239,6 +242,9 @@ border-color: var(--p);
   box-shadow: 0 0 30px var(--p);
 ;
 }
+.card  i{
+  color:var(--pin) !important;
+} 
 .card h3{
     padding:0.5rem;
     color:var(--p);
@@ -608,9 +614,7 @@ font-size: x-large;
 
 
 @media (max-width: 768px) {
-  /* main{
-    /* margin-top: 250px; */
-  } */
+ 
   h1 {
     font-size: 1.8rem;
     text-align: center;
@@ -633,18 +637,7 @@ font-size: x-large;
     width: 70%;
     margin: auto;
   }
-  .btn{
-    display: flex;
-  }
-  /* .hero .btn-primary{
-    margin-right: 100px;
-    margin-top: 100px;
-    margin-left: -10px;
-  }
-  .hero .btn-secondary{
-    margin-left: 150px;
-    margin-bottom: 100px;
-  } */
+
   #about .card {
     width: 90%;
     padding: 1.5rem;
