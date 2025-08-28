@@ -25,7 +25,85 @@ body{
     font-family: "Funnel Display", sans-serif;
     
 }
+main{
+    margin:7rem 1rem;
+}
+ 
+h2{
+    color: var(--p);
+    padding:1rem;
+     text-shadow: 0 0 30px var(--p);
+    font-size: 2rem;
+       text-align: center;
+        margin:2rem 0;
+}
+[class|="btn"] {
+  padding: 15px 25px;
+  font-weight: bold;
+  color: var(--txt);
+  border-width: 2px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+}
+[class|="btn"]:hover {
+  background-color: transparent;
+}
+.btn-primary {
+  background-color: var(--p);
+  color: var(--second-bgcolor);
+  padding: 15px 25px;
+  font-weight: bold;
+  color: var(--txt);
+  border-width: 2px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  border-radius: 120px;
+  margin: 1rem;
 
+}
+.btn-primary:hover {
+  color: var(--p);
+  border-color: var(--p);
+   box-shadow: 0 0 30px var(--p);
+}
+.btn-secondary {
+    color: var(--p);
+  border-color: var(--p);
+  border-radius: 120px;
+   box-shadow: 0 0 30px var(--p);
+   margin: 1rem;
+}
+
+.btn-secondary:hover {
+ background-color: var(--p);
+  color: var(--second-bgcolor);
+  padding: 15px 25px;
+  font-weight: bold;
+  color: var(--txt);
+  border-width: 2px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+}
+.card{
+    padding: 3rem;
+  border-color: var(--p);
+    border-width: 3px;
+    border-style: solid;
+  border-radius: 120px;
+  box-shadow: 0 0 30px var(--p);
+;
+}
+.card  i{
+  color:var(--pin) !important;
+} 
+.card h3{
+    padding:0.5rem;
+    color:var(--p);
+     text-shadow: 0 0 20px var(--p);
+
+     
+}
+/* header */
 header .container{
      background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
@@ -61,17 +139,7 @@ header a:hover{
      color: var(--p);
 
 } 
-main{
-    margin:7rem 1rem;
-}
- 
-h2{
-    color: var(--p);
-    padding:1rem;
-     text-shadow: 0 0 30px var(--p);
-    font-size: 2rem;
-       text-align: center;
-}
+ /* hero section */
 .hero {
     display:flex;
     flex-direction: row;
@@ -89,7 +157,7 @@ h2{
 }
 .hero h2{
     padding :0.5rem;
-    margin:1.5rem;
+    margin:2rem;
 }
 .hero h2::before{
  content: "|";
@@ -145,6 +213,13 @@ h2{
 
 }
 
+.hero .btn{
+    margin: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .hero-img{
     height :15%;
     width:9%;
@@ -159,62 +234,12 @@ border-color: var(--p);
    padding:19px auto;
 }
 
-[class|="btn"] {
-  padding: 15px 25px;
-  font-weight: bold;
-  color: var(--txt);
-  border-width: 2px;
-  border: 2px solid transparent;
-  font-size: 1rem;
-}
 
-[class|="btn"]:hover {
-  background-color: transparent;
-}
-
-.hero .btn{
-    margin: 3rem;
-    display:flex;
-    
-}
-.btn-primary {
-  background-color: var(--p);
-  color: var(--second-bgcolor);
-  padding: 15px 25px;
-  font-weight: bold;
-  color: var(--txt);
-  border-width: 2px;
-  border: 2px solid transparent;
-  font-size: 1rem;
-  border-radius: 120px;
-  margin: 1rem;
-
-}
-.btn-primary:hover {
-  color: var(--p);
-  border-color: var(--p);
-   box-shadow: 0 0 30px var(--p);
-}
-.btn-secondary {
-    color: var(--p);
-  border-color: var(--p);
-  border-radius: 120px;
-   box-shadow: 0 0 30px var(--p);
-   margin: 1rem;
-}
-
-.btn-secondary:hover {
- background-color: var(--p);
-  color: var(--second-bgcolor);
-  padding: 15px 25px;
-  font-weight: bold;
-  color: var(--txt);
-  border-width: 2px;
-  border: 2px solid transparent;
-  font-size: 1rem;
-}
-#about h2{
-    text-align: center;
+ /* about section */
+#about{
+    padding:1rem;
+    padding-top: 4rem;
+    margin:3rem;
 }
 #about p{
     width: 60%;
@@ -228,48 +253,22 @@ border-color: var(--p);
     flex-wrap: wrap;
     padding:30px auto;
 }
-#about{
-    padding:1rem;
-    padding-top: 4rem;
-    margin:3rem;
-}
-.card{
-    padding: 3rem;
-  border-color: var(--p);
-    border-width: 3px;
-    border-style: solid;
-  border-radius: 120px;
-  box-shadow: 0 0 30px var(--p);
-;
-}
-.card  i{
-  color:var(--pin) !important;
-} 
-.card h3{
-    padding:0.5rem;
-    color:var(--p);
-     text-shadow: 0 0 20px var(--p);
 
-     
-}
 .card strong{
   color: var(--pin);
 }
+/* education section */
 #education{
     padding:1rem;
     padding-top: 4rem;
     margin:9rem;
 }
 #education h2{
-    text-align: center;
-    padding:1rem;
-    margin:3rem;
+    margin:3rem 0;
 }
 #education .card{
     width: 30rem;
     height:24rem;
-    padding :4rem;
-   
 }
 .educards ul{
      display:flex;
@@ -278,11 +277,14 @@ border-color: var(--p);
     align-items: center;
     gap :2rem;
 }
-
 #education h3{
     text-align: center;
     padding-bottom: 1.5rem;
 }
+#education .year{
+  color:var(--pin);
+}
+/* skills section */
 #skills{
  display: flex;
  flex-direction: column;
@@ -301,7 +303,6 @@ border-color: var(--p);
  flex-direction: column;
  gap:0.5rem;
 }
-
 .tskill li {
   display: flex;
   align-items: center;
@@ -309,34 +310,28 @@ border-color: var(--p);
   margin: 1rem 0;
   font-size: 1.5rem;
 }
-
 .tskill li p {
   width: 4rem;
   margin: 0;
 }
-
 .tskill li div {
   flex: 1;
   height: 1rem;
   background:#2b0115d8 ;
   border-radius: 20px;
   margin: 0 0.5rem;
-  overflow: hidden;
   position: relative;
 }
-
 .tskill li div div {
   height: 100%;
   width: 0;
   background: var(--p);
   border-radius: 20px;
 }
-
 .cp div{
   animation: fillcp 5s linear forwards;
   animation-delay: 1s;
 }
-
 @keyframes fillcp {
   from { width: 0; }
   to { width:95%;}
@@ -412,9 +407,6 @@ border-color: var(--p);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 0.5rem auto;
-    width: 40%;
-    height: 100%;
     margin: 0.5rem auto;
     margin-bottom: 11rem;
 }
@@ -432,14 +424,13 @@ border-color: var(--p);
   font-weight: bolder;
   text-align: center;
 }
-#achieve h2{
-  margin:5rem;
-}
+/* achievement section */
 #achieve h3{
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: xx-large;
-  color: var(--p);
+  color: var(--pin);
+  text-shadow: 0px 0px 20px var(--p);
 }
 .inance img{
   width :100%;
@@ -471,7 +462,6 @@ border-color: var(--p);
  margin-top:2rem;
 }
 .inance .tag span{
-  
   padding:0.5rem;
   border-color: var(--pin);
     border-width: 3px;
@@ -493,15 +483,10 @@ border-color: var(--p);
   justify-content: center;
   align-items: center;
 }
-
+/* contact section */
 #contact {
   text-align: center;
 }
-
-#contact h2 {
-  text-align: center;
-}
-
 #contact .content {
   display: flex;
   flex-direction: column;
@@ -510,17 +495,14 @@ border-color: var(--p);
   gap: 30px;
   margin-top: 50px;
 }
-
 #contact form {
   width: 50%;
 }
-
 #contact form ::placeholder{
   font-size: 0.9rem;
   color: rgba(244, 232, 217, 0.707);
   
 }
-
 #contact form input,
 #contact form textarea {
   color:var(--txt);
@@ -531,7 +513,6 @@ border-color: var(--p);
   box-shadow: 0px 0px 7px var(--p);
   font-size: 1rem;
 }
-
 #contact form textarea {
   resize: vertical;
 }
@@ -552,10 +533,10 @@ border-color: var(--p);
 #contact i:hover{
   transform: scale(1.05) translateY(-5px);
 }
-
 form .btn-secondary{
-  background-color: var(--bgcolor);
+  background-color: transparent;
 }
+/* footer */
 footer p {
 text-align: center;
 color: var(--pin);
@@ -563,7 +544,6 @@ font-weight: bolder;
 font-size: x-large;
   text-shadow:0.5px 0.5px 20px var(--p);
 }
-
 
 @media (max-width: 1024px) {
   header .container {
@@ -595,14 +575,13 @@ font-size: x-large;
   #about p {
     width: 90%;
   }
-  
   #education .card {
     width: 80%;
     height: auto;
-    padding: 2rem;
+    padding: 3rem;
   }
   #skills .card {
-    width: 80%;
+    width: 50%;
   }
   .inance, .certi .card {
     width: 80%;
@@ -612,7 +591,6 @@ font-size: x-large;
     width: 70%;
   }
 }
-
 
 @media (max-width: 768px) {
  
@@ -638,7 +616,6 @@ font-size: x-large;
     width: 70%;
     margin: auto;
   }
-
   #about .card {
     width: 90%;
     padding: 1.5rem;
@@ -654,8 +631,8 @@ font-size: x-large;
     flex-direction: column;
     align-items: center;
   }
-  #skills .card {
-    width: 90%;
+  #skills .card{
+    width :60%;
   }
   #skills .card h3{
     text-align: center;
@@ -671,7 +648,6 @@ font-size: x-large;
   }
   #achieve h2{
     text-align: center;
-    margin-left: 3rem;
   }
   #contact form {
     width: 90%;
